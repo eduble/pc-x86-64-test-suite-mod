@@ -1,4 +1,4 @@
-FROM waltplatform/pc-x86-64-test-suite:latest
+FROM waltplatform/pc-x86-64-test-suite:latest as final
 ADD testfile /root
 RUN echo OK > /root/test-result
 RUN [ "$$" = "1" ]
